@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyLoginApplication</string>
+
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signOut">Sign Out</string>
+    <string name="register">Register</string>
+    <string name="status">status</string>
+</resources>
