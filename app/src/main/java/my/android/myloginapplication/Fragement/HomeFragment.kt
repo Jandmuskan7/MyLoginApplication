@@ -1,11 +1,15 @@
 package my.android.myloginapplication.Fragement
 
 import android.os.Bundle
+import android.os.TestLooperManager
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import my.android.myloginapplication.MenuBottomSheetFragment
 import my.android.myloginapplication.R
+import my.android.myloginapplication.databinding.FragmentHomeBinding
+import org.jetbrains.annotations.TestOnly
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +39,14 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home2, container, false)
+        var binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding.root.setOnClickListener {
+            val bottomSheetDialog=MenuBottomSheetFragment()
+            val test = null
+            bottomSheetDialog.show(parentFragmentManager,test)
+        }
+        return binding.root
+
     }
 
     companion object {
