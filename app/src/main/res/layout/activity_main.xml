@@ -52,13 +52,13 @@
         android:layout_marginBottom="116dp"
         android:text="@string/login"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_signUp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_signUp"
+        android:id="@+id/btn_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -77,10 +77,10 @@
         android:padding="0dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293"
+        app:layout_constraintVertical_bias="0.287"
         app:srcCompat="@drawable/food_restaurant_svgrepo_com" />
 
     <TextView
@@ -121,6 +121,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/bree_serif"
+        android:shadowColor="@color/AliceBlue"
+        android:shadowDx="-10"
+        android:shadowDy="50"
+        android:shadowRadius="10"
         android:text="Cravings delivered to your Doorstep"
         android:textColor="@color/black"
         android:textSize="16.7sp"
@@ -151,7 +155,7 @@
         android:text="Don't have an Account?"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_signUp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"

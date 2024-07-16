@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragement.ProfileFragment">
+    android:orientation="vertical"
+    android:padding="20dp">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="profile" />
+        android:id="@+id/usernameTextView"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/BurlyWood"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:text="Username     Guest"
+        android:textColor="#356"
+        android:textSize="20sp" />
 
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/burlywood"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:text="Email              guest@gmail.com"
+        android:textColor="#356"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/burlywood"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:text="Phone             4377678236"
+        android:textColor="#356"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/burlywood"
+        android:fontFamily="serif"
+        android:padding="6dp"
+        android:text="Address           56 Disco Rd, Toronto"
+        android:textColor="#356"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:text="Save Information"
+        android:textColor="#06080B"
+        android:background="@drawable/proceedbutonshape"
+        android:textSize="30sp" />
+</LinearLayout>
