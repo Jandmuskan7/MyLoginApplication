@@ -10,6 +10,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import my.android.myloginapplication.R
+import my.android.myloginapplication.adapter.PopularAdapter
 import my.android.myloginapplication.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -52,6 +53,11 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(),itemMessage, Toast.LENGTH_SHORT).show()
             }
         })
+
+        val foodName = listOf("pizza", "burger", "pasta", "item")
+        val Price = listOf("$5","$7","$8","$10")
+        val popularFoodImages= listOf(R.drawable.menu1, R.drawable.menu2, R.drawable.menu3, R.drawable.menu4 )
+        val adapter= PopularAdapter(foodName, Price, popularFoodImages)
     }
 
 
