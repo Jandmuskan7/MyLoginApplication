@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import my.android.myloginapplication.databinding.PopularItemBinding
 
-class PopularAdapter (private val items:List<String>,private val image:List<Int>) : RecyclerView.Adapter<PopularAdapter.PopularViewHolder>(){
+class PopularAdapter (private val items:List<String>,private val price:List<String>,private val image:List<Int>) : RecyclerView.Adapter<PopularAdapter.PopularViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {
@@ -17,14 +17,18 @@ class PopularAdapter (private val items:List<String>,private val image:List<Int>
     override fun onBindViewHolder(holder: PopularViewHolder, position: Int) {
         val item = items[position]
         val images = image[position]
-        holder.bind(item, images)
+        val price = price[position]
+        holder.bind(item, price, images)
     }
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return items.size
     }
     class PopularViewHolder (private val binding:PopularItemBinding) : RecyclerView.ViewHolder(binding.root){
-        fun bind(item: String, images: Int) {
-
+       private val  imagesView = binding.imageView3
+        fun bind(item: String, price: String,images: Int) {
+            binding.foodNamePopular.text = item
+            binding.PricePopular.text = price
+            imagesView.setImageResource(images)
         }
 
     }

@@ -37,6 +37,6 @@ val binding =ActivitySignUpBinding.inflate(layoutInflater)
                 }
             }
         }
-        
+
     }
 }
