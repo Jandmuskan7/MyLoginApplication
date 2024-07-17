@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyLoginApplication"
         tools:targetApi="31">
+<activity android:name=".DetailsActivity"
+    android:exported="false"/>
         <activity
             android:name=".ChooseLocationActivity"
             android:exported="false" />
