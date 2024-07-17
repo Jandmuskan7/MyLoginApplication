@@ -24,10 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Initialize NavController
-        binding.btnSignup.setOnClickListener {
-            val intent=Intent(this,SignUpActivity::class.java)
-            startActivity(intent)
-        }
+
 
         binding.btnLogin.setOnClickListener {
             val email = binding.editTextTextEmailAddress.text.toString()
@@ -46,5 +43,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        binding.btnSignUp.setOnClickListener {
+            startActivity(Intent(this, SignUpActivity::class.java))
+            finish()
+        }
     }
 }

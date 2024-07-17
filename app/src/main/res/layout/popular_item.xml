@@ -59,7 +59,6 @@
                 android:id="@+id/textView24"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/addtocartshape"
@@ -70,7 +69,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/PricePopular"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.785" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

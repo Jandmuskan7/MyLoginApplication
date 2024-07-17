@@ -5,7 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/BurlyWood</item>
         <item name="colorPrimaryDark">@color/BurlyWood</item>
-        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 
     <style name="Theme.MyLoginApplication" parent="Base.Theme.MyLoginApplication" />
