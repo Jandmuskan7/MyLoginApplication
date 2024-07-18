@@ -1,11 +1,14 @@
 package my.android.myloginapplication.Fragement
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import my.android.myloginapplication.CongratsBottomSheet
+import my.android.myloginapplication.PayOutActivity
 import my.android.myloginapplication.R
 import my.android.myloginapplication.adapter.CartAdapter
 import my.android.myloginapplication.databinding.FragmentCartBinding
@@ -40,18 +43,19 @@ private lateinit var binding:FragmentCartBinding
         val adapter = CartAdapter(ArrayList(cartFoodName),ArrayList(cartItemPrice),ArrayList(cartImage))
         binding.cartRecyclerView.layoutManager= LinearLayoutManager(requireContext())
         binding.cartRecyclerView.adapter = adapter
+        binding.proceedButton.setOnClickListener{
+            val intent = Intent(requireContext(),PayOutActivity::class.java)
+            startActivity(intent)
+        }
+        binding.proceedButton.setOnClickListener{
+        val bottomSheetDialog = CongratsBottomSheet()
+        bottomSheetDialog.show(parentFragmentManager, "Test")
+        }
         return  binding.root
     }
 
     companion object {
 
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            CartFragment().apply {
-                arguments = Bundle().apply {
 
-                }
-            }
     }
 }
